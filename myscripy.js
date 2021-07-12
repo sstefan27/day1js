@@ -39,12 +39,16 @@ function loadData(){
                     let img = createNode('img');
                     let span = createNode('span');
                     img.src = author.picture.medium;
-                    span.innerHTML = `${author.name.first} ${author.name.last} ${author.gender} ${author.nat} ${author.location.city}`;
+                    span.innerHTML = `${author.name.first} ${author.name.last}`;
                     var buttonExp = createNode('button');
+                    buttonExp.id="expandThis";
                     buttonExp.innerHTML = 'details';
                     buttonExp.addEventListener('click', () => {
-                        window.open("2nd.html")
-                    })
+                       // window.open("2nd.html") 
+                       var li2 = createNode('li');
+                       span.innerHTML=` ${author.gender} ${author.nat} ${author.location.city}`;
+                       
+                    });
                     append(li, img);
                     append(li, span);
                     append(li,buttonExp);
