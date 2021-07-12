@@ -1,0 +1,17 @@
+body {
+    background-color: lightgrey;
+}
+
+button {
+    margin-left: 5px;
+}
+
+.authorsContainer {
+    background-color: powderblue;
+    padding: 10px;
+    margin: 5px;
+}
+
+.author {
+    word-break: break-word;
+}
