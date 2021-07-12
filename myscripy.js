@@ -45,9 +45,8 @@ function loadData(){
                     buttonExp.innerHTML = 'details';
                     buttonExp.addEventListener('click', () => {
                        // window.open("2nd.html") 
-                       var li2 = createNode('li');
-                       span.innerHTML=` ${author.gender} ${author.nat} ${author.location.city}`;
-                       
+                       span.innerHTML=` Gender: ${author.gender}, Nationality: ${author.nat} City: ${author.location.city}`;
+                       //var smth = window.open("2nd.html");
                     });
                     append(li, img);
                     append(li, span);
